@@ -1,6 +1,9 @@
-# Cashu (cashu)
+# Granola Cash
+Granola Cash is a cashu.me fork that adds a nostr-based order book on the app, allowing no-kyc atomic ecash swaps.
 
-Cashu Wallet
+This is a project for SatsHack, the SatsConf hackaton.
+
+
 
 ## One-liner build & run
 ```
