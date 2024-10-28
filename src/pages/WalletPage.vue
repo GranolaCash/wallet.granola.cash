@@ -75,6 +75,7 @@
           ></q-tab>
           <!-- <q-tab name="tokens" label="Tokens"></q-tab> -->
           <q-tab name="mints" class="text-secondary" label="Mints"></q-tab>
+          <q-tab name="orderbook" class="text-secondary" label="Order Book"></q-tab>
         </q-tabs>
 
         <q-tab-panels
@@ -99,6 +100,13 @@
           <q-tab-panel name="mints" class="q-px-sm">
             <MintSettings />
           </q-tab-panel>
+
+          <!-- ////////////////////// ORDERBOOK ////////////////// -->
+
+          <q-tab-panel name="orderbook" class="q-px-sm">
+            <OrderBook />
+          </q-tab-panel>
+          
         </q-tab-panels>
       </q-expansion-item>
 
@@ -187,6 +195,7 @@ import token from "src/js/token";
 // Vue components
 import BalanceView from "components/BalanceView.vue";
 import MintSettings from "components/MintSettings.vue";
+import OrderBook from "src/components/OrderBook.vue";
 import InvoicesTable from "components/InvoicesTable.vue";
 import HistoryTable from "components/HistoryTable.vue";
 import NoMintWarnBanner from "components/NoMintWarnBanner.vue";
@@ -220,6 +229,7 @@ export default {
   components: {
     BalanceView,
     MintSettings,
+    OrderBook,
     InvoicesTable,
     HistoryTable,
     NoMintWarnBanner,
